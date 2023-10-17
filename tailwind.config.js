@@ -1,18 +1,96 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
+    fontSize: {
+      xs: 12,
+      sm: 13,
+      md: 14,
+      lg: 16,
+      xl: 24,
+      xxl: 32,
+      "2xl": 48,
+    },
+    colors: {
+      background: {
+        dark: "#212227",
+        light: "#FFFFFF",
+      },
+      black: {
+        300: "#424349",
+        400: "#333333",
+        500: "#191A1F",
+      },
+      blue: {
+        100: "#DFEFFE",
+        200: "#B8DCFC",
+        300: "#91C9FB",
+        400: "#69B5F9",
+        500: "#42A2F8",
+        600: "#0C87F6",
+        700: "#076AC3",
+        800: "#054D8C",
+      },
+      gray: {
+        200: "#E5E5E5",
+        400: "#C4C4C4",
+        500: "#A8A8A8",
+        600: "#8C8C8C",
+        700: "#707070",
+        800: "#545454",
+        900: "#383838",
+      },
+      green: {
+        50: "#BCF1E0",
+        100: "#ABEED8",
+        200: "#89E7C8",
+        300: "#67E0B9",
+        400: "#45D9A9",
+        500: "#2ACB97",
+        600: "#209D74",
+        700: "#176E52",
+        800: "#0D402F",
+      },
+      red: {
+        50: "#FAEDEB",
+        100: "#EDBFB7",
+        200: "#E5A397",
+        300: "#DC8676",
+        400: "#D46956",
+        500: "#CC4C35",
+        600: "#A03B28",
+        700: "#742A1D",
+        800: "#471A12",
+      },
+      transparent: "transparent",
+      yellow: {
+        200: "#FDF7E5",
+        400: "#FFD969",
+        500: "#FFCF41",
+        600: "#FFC518",
+        700: "#EEB200",
+        800: "#B68800",
+        900: "#7E5E00",
+      },
+      white: "#FFFFFF",
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "sign-in": "url('/src/shared/assets/images/bg-sign-in.webp')",
+      },
+      boxShadow: {
+        black: "0 3px 6px rgba(51, 51, 51, 0.2)",
+        green: "0 3px 6px rgba(42, 203, 151, 0.2)",
+      },
+      fontFamily: {
+        sans: "Signika, sans-serif",
       },
     },
   },
   plugins: [],
-}
+};
