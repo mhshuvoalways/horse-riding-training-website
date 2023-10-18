@@ -72,8 +72,8 @@ const Index = () => {
         {allItems.map((item) => (
           <Fade bottom key={item.id}>
             <div
-              className={`w-full md:w-[40%] lg:w-[45%] bg-white shadow-2xl p-4 sm:p-8 rounded-3xl ${
-                expandItem?.id === item.id ? "h-auto" : "h-40"
+              className={`w-full md:w-[40%] lg:w-[46%] bg-white shadow-2xl p-4 sm:p-8 rounded-3xl ${
+                expandItem?.id === item.id ? "h-auto" : "h-36"
               }`}
             >
               <div

@@ -44,7 +44,7 @@ const index = () => {
   return (
     <div className="bg-green-500 mt-14 pt-32 pb-20">
       <div className="w-10/12 mx-auto container">
-        <p className="text-xxl sm:text-2xl font-bold text-white text-center">
+        <p className="text-xxl md:text-[65px] font-bold text-white text-center mb-0 sm:-mb-10">
           Conheça por dentro do Equites!
         </p>
         <Slider {...settings}>

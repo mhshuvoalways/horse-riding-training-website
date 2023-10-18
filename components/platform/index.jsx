@@ -10,7 +10,7 @@ const index = () => {
         <Image src={ComputerImg} alt="" className="w-full sm:w-6/12" />
         <Fade bottom>
           <div>
-            <p className="text-white text-xl sm:text-xxl font-bold mb-14">
+            <p className="text-white text-xl sm:text-2xl mb-14 leading-tight">
               Uma plataforma completa, com tudo que você precisa para uma rotina
               hípica organizada Quero ser Equites!
             </p>

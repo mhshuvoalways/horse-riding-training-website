@@ -8,7 +8,7 @@ const index = () => {
       <div className="w-10/12 mx-auto container z-10">
         <div className="w-full md:w-5/12 ml-auto">
           <Fade bottom>
-            <p className="text-green-500 text-xxl md:text-2xl font-bold">
+            <p className="text-green-500 text-xxl md:text-[65px] leading-tight font-bold">
               Cavalos mais saudáveis, alunos mais felizes, e você no controle.
             </p>
             <div className="mt-7">

@@ -6,9 +6,9 @@ const index = () => {
   return (
     <div className="w-10/12 mx-auto container relative">
       <div className="flex flex-wrap lg:flex-nowrap justify-between items-center gap-10 lg:gap-20">
-        <div className="w-full lg:w-[30%] pt-56">
+        <div className="w-full lg:w-[30%] pt-24 pb-20">
           <Fade bottom>
-            <p className="text-green-500 font-bold text-2xl">
+            <p className="text-green-500 font-bold text-2xl sm:text-[65px] leading-tight">
               Sob a palma da sua mão
             </p>
             <p className="font-bold text-xl text-black-400 mt-8">

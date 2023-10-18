@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import Intro from "@/components/intro";
 import IntroDescription from "@/components/intro/Description";
 import Platform from "@/components/platform";
@@ -18,25 +19,35 @@ const Index = () => {
   return (
     <>
       <Intro />
-      <IntroDescription
-        desTitle="Uma nova forma de fazer gestão"
-        desDes="Com o Equites você pode gerenciar sua hípica de forma fácil,
+      <Element name="Sobre">
+        <IntroDescription
+          desTitle="Uma nova forma de fazer gestão"
+          desDes="Com o Equites você pode gerenciar sua hípica de forma fácil,
         intuitiva e 100% online."
-      />
+        />
+      </Element>
       <Platform />
-      <Features />
+      <Element name="Benefícios">
+        <Features />
+      </Element>
       <FeaureDescription />
       <Control />
-      <Dashboard />
+      <Element name="Por dentro da plataforma">
+        <Dashboard />
+      </Element>
       <DashboardDescription
         desTitle="Deixe a papelada para trás e abrace a modernidade com o Equites."
         desDes="Adeus quadros e blocos de anotações. O futuro da sua hípica chegou!"
       />
-      <Testimonials />
+      <Element name="Depoimentos">
+        <Testimonials />
+      </Element>
       <Pricing />
       <PricingDescription />
       <HealthierHorses />
-      <Shopping />
+      <Element name="Equites Shopping">
+        <Shopping />
+      </Element>
       <RideNow />
       <Footer />
     </>

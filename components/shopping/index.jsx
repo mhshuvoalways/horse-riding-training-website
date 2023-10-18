@@ -7,13 +7,13 @@ import ShoppingImg from "@/public/images/shopping.png";
 
 const index = () => {
   return (
-    <div className="bg-background-dark pb-24">
+    <div className="bg-background-dark pb-24 relative">
       <Image src={BadgetIcon} alt="" className="w-6/12 md:w-3/12 pt-28" />
       <div className="w-10/12 mx-auto flex justify-between flex-wrap lg:flex-nowrap gap-16 lg:gap-24 container">
         <div className="w-full lg:w-5/12">
           <Fade bottom>
             <div className="mt-[100px]">
-              <p className="text-green-500 text-2xl sm:text-[80px] font-bold leading-none">
+              <p className="text-green-500 text-2xl sm:text-[85px] font-bold leading-none">
                 Equites Shopping
               </p>
               <p className="text-xl text-white mt-8">
@@ -47,11 +47,7 @@ const index = () => {
             </div>
           </Fade>
         </div>
-        <Fade bottom>
-          <div>
-            <Image src={ShoppingImg} alt="" className="w-full" />
-          </div>
-        </Fade>
+        <Image src={ShoppingImg} alt="" className="w-full md:w-[55%] mx-auto static lg:absolute right-5 top-5" />
       </div>
     </div>
   );

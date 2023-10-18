@@ -13,7 +13,7 @@ const NextArrow = (props) => {
       src={NextArrowBlue}
       alt=""
       onClick={onClick}
-      className="absolute right-0 top-0 cursor-pointer"
+      className="absolute right-[10%] top-[15%] md:right-[30%] md:top-[24%] cursor-pointer"
     />
   );
 };
@@ -34,17 +34,17 @@ const index = () => {
   };
 
   return (
-    <div className="bg-gray-200 mt-28 py-24 relative">
+    <div className="bg-gray-200 mt-28 py-24">
       <div className="w-10/12 mx-auto container">
         <Slider {...settings}>
           <div className="text-center">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center relative">
               <Image
                 src={ClientBrand}
                 alt=""
-                className="w-[30%] h-[30%] -mr-[8%]"
+                className="w-5/12 sm:w-[27%] absolute -left-6 sm:left-[18%] sm:top-[18%] -z-10"
               />
-              <Image src={ClientImg} alt="" className="w-5/12 -ml-[8%]" />
+              <Image src={ClientImg} alt="" className="w-10/12 sm:w-5/12" />
             </div>
             <div className="md:-mt-12">
               <p className="font-bold text-xxl">Luiza Andrighetto</p>
@@ -52,7 +52,7 @@ const index = () => {
                 Gestora da Hípica TWZ - Porto Alegre RS
               </p>
             </div>
-            <p className="text-lg sm:text-xl leading-loose text-justify mt-7 md:mt-14">
+            <p className="text-lg sm:text-xl leading-[2.5] text-justify mt-7 md:mt-14">
               Organização é um importante valor da Escola TWZ e entendemos que
               está diretamente ligada ao desempenho dentro pistas, saúde dos
               nossos cavalos e na satisfação dos clientes.
@@ -75,7 +75,7 @@ const index = () => {
               <Image
                 src={ClientBrand}
                 alt=""
-                className="w-[30%] h-[30%] -mr-[8%]"
+                className="w-[27%] h-[27%] -mr-[8%]"
               />
               <Image src={ClientImg} alt="" className="w-5/12 -ml-[8%]" />
             </div>
